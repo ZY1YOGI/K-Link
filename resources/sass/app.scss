@@ -1,0 +1,105 @@
+// Fonts
+/* Google Font Import - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+// Normalize
+@import "normalize.css/normalize.css";
+
+// Variables
+@import "variables";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    // min-width: 100vw;
+    background-color: var(--body-color);
+    transition: var(--tran-main);
+}
+
+:root {
+    /* ===== Colors ===== */
+    --body-color: #e4e9f7;
+    --primary-color: #695cfe;
+    --text-color: #000;
+    --shadow: #978cff86;
+    /* ====== Transition ====== */
+    --tran-main: all 0.4s ease;
+}
+
+body.dark {
+    --body-color: #18191a;
+    --primary-color: #e6dff8;
+    --text-color: #695cfe;
+    --shadow: #cc00ff1a;
+    --tran-main: all 0.6s ease;
+}
+
+.splash {
+    position: absolute;
+    background-color: var(--body-color);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.splash-ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 2.5px #ff0000;
+    animation: splash-ring 1.8s linear infinite;
+}
+@keyframes splash-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.splash-ring:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ebebeb;
+}
+.text-splash {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text-splash 1.5s ease-in-out infinite;
+    z-index: 9999;
+}
+@keyframes text-splash {
+    50% {
+        color: #000;
+    }
+}

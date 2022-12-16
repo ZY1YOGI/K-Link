@@ -1,0 +1,116 @@
+/* START HEADER */
+
+header {
+    min-width: 100vw;
+    width: 100vw;
+    box-shadow: 1rem 1rem 3rem var(--shadow);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.logo h1 {
+    color: var(--primary-color);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .nav-link {
+    padding-right: 20px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-links .nav-link a {
+    color: var(--text-color);
+    transition: 0.5s;
+    position: relative;
+}
+
+.nav-links .nav-link:hover a {
+    color: var(--primary-color);
+}
+.nav-links .nav-link.active a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    right: 0;
+    bottom: -3px;
+}
+.nav-links .nav-link.active a {
+    color: var(--primary-color);
+}
+
+#switch-mode {
+    color: #4400ff;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 5px 19px;
+    box-shadow: 1rem 1rem 3rem var(--shadow);
+}
+
+#switch-mode:hover {
+    color: #00f;
+    border-radius: 10px;
+}
+
+/* END HEADER */
+
+@media screen and (max-width: 575px) {
+    .nav-links .nav-link {
+        padding-right: 5px;
+        font-size: 14px;
+    }
+    #switch-mode {
+        padding: 4px 8px;
+        margin-left: 2px;
+    }
+    header nav {
+        margin-right: 1%;
+        margin-left: 1%;
+        margin: 0;
+    }
+    .logo h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767) {
+    .nav-links .nav-link {
+        padding-right: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991) {
+    .nav-links .nav-link {
+        padding-right: 15px;
+    }
+}
+
+/* END MEDIA */

@@ -1,0 +1,87 @@
+@import "../variables";
+@import "../header";
+/* START HOME */
+#main {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.container .box {
+    border-radius: 12px;
+    overflow: hidden;
+    flex-basis: 30%;
+    margin-top: 20px;
+    background-color: var(--body-color);
+    box-shadow: 0.8rem 0.8rem 3rem var(--shadow);
+}
+.container .box .img {
+    width: 100%;
+}
+.container .box .img img {
+    width: 100%;
+    object-fit: cover;
+}
+.container .box .text {
+    text-align: right;
+    padding: 20px 10px;
+}
+.container .box .text span {
+    color: var(--text-color);
+    font-size: 20px;
+}
+.container .box .text p {
+    color: var(--primary-color);
+    font-size: 14px;
+    margin: 20px 0;
+}
+.container .box .text a {
+    font-size: 16px;
+}
+.btn {
+    color: #4400ff;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 8px 28px;
+    box-shadow: 1rem 1rem 3rem var(--shadow);
+}
+
+.btn:hover {
+    color: #00f;
+    border-radius: 10px;
+}
+/* END HOME */
+
+/* START MEDIA */
+
+@media screen and (max-width: 575px) {
+    .container .box {
+        flex-basis: 100%;
+        margin: 0px auto 28px;
+    }
+    .container {
+        width: 90%;
+    }
+    .btn {
+        padding: 5px 25px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991) {
+}
+
+/* END MEDIA */
