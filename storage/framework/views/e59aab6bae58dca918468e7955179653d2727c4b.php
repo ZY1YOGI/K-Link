@@ -1,7 +1,7 @@
 <header>
     <nav>
         <div class="logo">
-            <img src="<?php echo e(asset('favicon.jpg')); ?>" />
+            <img src="<?php echo e(Vite::asset('resources/img/Youssef.jpg')); ?>" />
             <h1><?php echo e(explode(' ', Auth::user()->name)[0]); ?></h1>
             <div class="auth"></div>
         </div>
