@@ -137,7 +137,7 @@
                                         class="fa-brands fa-facebook-f"></i></a>
                                 <a href="https://twitter.com/YoussefAmjad6" target="_blank"><i
                                         class="fa-brands fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/zy_1_yogi" target="_blank"><i
+                                <a href="https://www.instagram.com/zy1yogi" target="_blank"><i
                                         class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
