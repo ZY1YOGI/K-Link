@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,13 +14,13 @@ use App\Http\Controllers;
 */
 
 
-Route::get('/', [Controllers\WelcomeController::class, "index"])->name("welcome");
-Route::get('/home', [Controllers\HomeController::class, "index"])->name("home");
-Route::get('/profile', [Controllers\HomeController::class, "profile"])->name("profile");
+Route::get('/', [App\Http\Controllers\WelcomeController::class, "index"])->name("welcome");
+Route::get('/home', [App\Http\Controllers\HomeController::class, "index"])->name("home");
+Route::get('/profile', [App\Http\Controllers\HomeController::class, "profile"])->name("profile");
 
 
 
-Route::get('/auth', [Controllers\Auth\AuthController::class, "index"])->name("auth");
-Route::post('/auth/login', [Controllers\Auth\LoginController::class, "login"])->name("login");
-Route::post('/auth/register', [Controllers\Auth\RegisterController::class, "register"])->name("register");
-Route::post('/auth/logout', [Controllers\Auth\LoginController::class, "logout"])->name("logout");
+Route::get('/auth', [App\Http\Controllers\Auth\AuthController::class, "index"])->name("auth");
+Route::post('/auth/login', [App\Http\Controllers\Auth\LoginController::class, "login"])->name("login");
+Route::post('/auth/register', [App\Http\Controllers\Auth\RegisterController::class, "register"])->name("register");
+Route::post('/auth/logout', [App\Http\Controllers\Auth\LoginController::class, "logout"])->name("logout");
