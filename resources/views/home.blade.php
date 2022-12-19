@@ -50,5 +50,5 @@
 @endsection
 
 @section('scripts')
-    @vite('resources/js/Home/Home.js')
+    @vite('resources/js/Home/home.js')
 @endsection

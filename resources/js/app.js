@@ -25,7 +25,7 @@ $("#switch-mode").click(function () {
     localStorage.setItem("mood", "light");
 });
 
-if (window.location.pathname === "/home") {
+if (window.location.pathname === "/home" || window.location.pathname === "/admin") {
     $("#home_link").addClass("active");
 } else if (window.location.pathname === "/profile") {
     $("#profile_link").addClass("active");

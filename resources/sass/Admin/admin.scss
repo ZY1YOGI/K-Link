@@ -1,0 +1,227 @@
+@import "../variables";
+
+/* START HEADER */
+
+hr {
+    background: #000;
+    display: block;
+    min-width: 100vw;
+    height: 3px;
+    box-shadow: 1rem 1rem 3rem var(--shadow);
+}
+
+header {
+    min-width: 100vw;
+    width: 100vw;
+    box-shadow: 1rem 1rem 3rem var(--shadow);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.logo h1 {
+    color: var(--primary-color);
+    padding-left: 15px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0.1px 0.1px 10px var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    // padding: 0;
+}
+
+.nav-links .nav-link {
+    padding-right: 20px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-links .nav-link a {
+    color: var(--text-color);
+    transition: 0.5s;
+    position: relative;
+}
+
+.nav-links .nav-link:hover a {
+    color: var(--primary-color);
+}
+.nav-links .nav-link.active a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    right: 0;
+    bottom: -3px;
+}
+.nav-links .nav-link.active a {
+    color: var(--primary-color);
+}
+
+#switch-mode {
+    color: #4400ff;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 5px 19px;
+    box-shadow: 1rem 1rem 4rem var(--shadow);
+}
+
+#switch-mode:hover {
+    color: #00f;
+    border-radius: 10px;
+}
+
+/* END HEADER */
+
+.container_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.container_cards .card {
+    flex-basis: 23%;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    box-shadow: 0.4rem 0.4rem 3rem var(--shadow);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.container_cards .card .text {
+    text-align: center;
+}
+.container_cards .card .text h1 {
+    color: var(--text-color);
+    font-size: 20px;
+}
+.container_cards .card .text p {
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+
+.students {
+    margin-top: 3%;
+    align-items: center;
+}
+
+.students .input_form {
+    display: flex;
+    justify-content: center;
+}
+
+.students .input_form input {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    color: var(--text-color);
+    padding: 8px 12px;
+    outline: none;
+    box-shadow: 0rem 0rem 5rem var(--shadow);
+}
+
+.students .input_form input::placeholder {
+    color: var(--text-color);
+}
+
+
+
+
+
+.container_student {
+
+}
+
+.student {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.student .info_student {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25
+    px;
+    border: 5px solid #000;
+}
+.student .student_img img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0.1px 0.1px 10px var(--primary-color);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+    .nav-links .nav-link {
+        padding-right: 2px;
+        font-size: 12px;
+    }
+    #switch-mode {
+        padding: 3px 6px;
+        margin-left: 0px;
+    }
+    header nav {
+        margin-right: 0;
+        margin-left: 1%;
+        margin: 0;
+    }
+    .logo h1 {
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767) {
+    .nav-links .nav-link {
+        padding-right: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991) {
+    .nav-links .nav-link {
+        padding-right: 15px;
+    }
+}
+
+/* END MEDIA */

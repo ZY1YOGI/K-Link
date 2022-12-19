@@ -142,5 +142,5 @@
 @endsection
 
 @section('scripts')
-    @vite('resources/js/Profile/Profile.js')
+    @vite('resources/js/Profile/profile.js')
 @endsection

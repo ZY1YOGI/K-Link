@@ -9,10 +9,11 @@ export default defineConfig({
         laravel({
             input: [
                 "resources/js/app.js",
-                "resources/js/Home/Home.js",
-                "resources/js/Profile/Profile.js",
-                "resources/js/Welcome/Welcome.js",
+                "resources/js/Welcome/welcome.js",
                 "resources/js/Auth/auth.js",
+                "resources/js/Home/home.js",
+                "resources/js/Profile/profile.js",
+                "resources/js/Admin/admin.js",
             ],
             refresh: true,
         }),

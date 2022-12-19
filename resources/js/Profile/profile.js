@@ -1,4 +1,4 @@
-import "../../sass/Profile/Profile.scss";
+import "../../sass/Profile/profile.scss";
 
 $(window)
     .on("load resize ", function () {

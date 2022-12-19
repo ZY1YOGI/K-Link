@@ -193,5 +193,5 @@
 @endsection
 
 @section('scripts')
-    @vite('resources/js/Welcome/Welcome.js')
+    @vite('resources/js/Welcome/welcome.js')
 @endsection
