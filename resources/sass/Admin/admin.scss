@@ -128,7 +128,7 @@ header nav {
 // ###################
 
 .section_students {
-    margin: 50%;
+    margin: 5%;
 }
 
 .section_students .input_form {
@@ -140,7 +140,7 @@ header nav {
     border: 5px solid transparent;
     border-radius: 15px;
     color: var(--text-color);
-    padding: 6px 10px;
+    padding: 8px 12px;
     outline: none;
     box-shadow: 0rem 0rem 5rem var(--shadow);
 }
@@ -179,7 +179,7 @@ header nav {
     align-content: center;
 }
 
-.student .info_student  h1  span {
+.student .info_student h1 span {
     color: var(--primary-color);
 }
 
@@ -204,14 +204,13 @@ header nav {
     bottom: -7px;
 }
 
-
 .student .info_student a {
     white-space: nowrap;
     border: var(--text-color) solid 3px;
     box-shadow: 0 0 1rem 3px var(--shadow);
     border-radius: 15px;
     padding: 5px 10px;
-    transition: .5s;
+    transition: 0.5s;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -229,7 +228,6 @@ header nav {
     border-radius: 50%;
     object-fit: cover;
 }
-
 
 @media screen and (max-width: 575px) {
     .nav-links .nav-link {
@@ -265,12 +263,20 @@ header nav {
 
     .container_students {
         margin: 35px 3px;
-        overflow: hidden;
-        padding: 0 8px;
+        padding: 0 0px;
     }
     .container_students .student {
-        margin: 5px 0;
+        flex-direction: column;
+        margin: 10px auto;
+        border-radius: 0;
+        padding: 5px 0;
     }
+
+    .student .info_student {
+        justify-content: center;
+        padding: 0 auto;
+    }
+
     .student .info_student h1 {
         font-size: 6px;
         font-weight: bold;
@@ -278,18 +284,20 @@ header nav {
     }
 
     .student .info_student a {
-        padding: 3px 8px;
+        margin: 0;
+        padding: 3px 3px;
+        font-size: 6px;
+        border: var(--text-color) solid 1px;
     }
 
     .student .student_img img {
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
 
     .student .monthly_expenses.no::after {
-        height: 3px;
+        height: 2px;
     }
-
 }
 
 @media screen and (min-width: 576px) and (max-width: 767) {
@@ -305,9 +313,6 @@ header nav {
 }
 
 /* END MEDIA */
-
-
-
 
 ::-webkit-scrollbar {
     width: 5px;
