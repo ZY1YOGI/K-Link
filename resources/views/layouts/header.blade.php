@@ -1,7 +1,7 @@
 <header>
     <nav>
         <div class="logo">
-            <img src="{{ Vite::asset('resources/img/Youssef.jpg') }}" />
+            <img src="{{ Vite::asset('resources/img/student.png') }}" />
             <h1>{{ explode(' ', Auth::user()->name)[0] }}</h1>
             <div class="auth"></div>
         </div>

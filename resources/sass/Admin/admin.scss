@@ -2,18 +2,10 @@
 
 /* START HEADER */
 
-hr {
-    background: #000;
-    display: block;
-    min-width: 100vw;
-    height: 3px;
-    box-shadow: 1rem 1rem 3rem var(--shadow);
-}
-
 header {
     min-width: 100vw;
     width: 100vw;
-    box-shadow: 1rem 1rem 3rem var(--shadow);
+    box-shadow: 0rem 1rem 3rem var(--shadow);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
@@ -108,10 +100,10 @@ header nav {
 }
 
 .container_cards .card {
-    flex-basis: 23%;
+    flex-basis: 15%;
     margin: 0 auto;
     background-color: var(--primary-color);
-    box-shadow: 0.4rem 0.4rem 3rem var(--shadow);
+    box-shadow: 0 0 5rem 1.5px var(--shadow);
     border-radius: 12px;
     overflow: hidden;
 }
@@ -120,7 +112,7 @@ header nav {
     text-align: center;
 }
 .container_cards .card .text h1 {
-    color: var(--text-color);
+    color: var(--body-color);
     font-size: 20px;
 }
 .container_cards .card .text p {
@@ -129,73 +121,124 @@ header nav {
     margin: 16px 0;
 }
 
+// ###################
+// ###################
+// #######################################################
+// ###################
+// ###################
 
-.students {
-    margin-top: 3%;
-    align-items: center;
+.section_students {
+    margin: 50%;
 }
 
-.students .input_form {
+.section_students .input_form {
     display: flex;
     justify-content: center;
 }
 
-.students .input_form input {
+.section_students .input_form input {
     border: 5px solid transparent;
     border-radius: 15px;
     color: var(--text-color);
-    padding: 8px 12px;
+    padding: 6px 10px;
     outline: none;
     box-shadow: 0rem 0rem 5rem var(--shadow);
 }
 
-.students .input_form input::placeholder {
+.section_students .input_form input::placeholder {
     color: var(--text-color);
 }
 
-
-
-
-
-.container_student {
-
+.container_students {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 35px 35px;
+    padding: 0 12px;
+    box-shadow: 0 0 3rem var(--shadow);
+    border-radius: 25px;
+    overflow-x: hidden;
 }
 
-.student {
+.container_students .student {
     display: flex;
     align-items: center;
     text-align: center;
+    border: 5px solid var(--primary-color);
+    border-radius: 60px 0px 0px 60px;
+    border-left: transparent;
+    border-right: transparent;
+    margin: 35px 0;
 }
 
 .student .info_student {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 25
-    px;
-    border: 5px solid #000;
+    align-items: center;
+    align-content: center;
 }
+
+.student .info_student  h1  span {
+    color: var(--primary-color);
+}
+
+.student .info_student h1 {
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0 15px;
+    color: var(--text-color);
+}
+
+.student .monthly_expenses {
+    position: relative;
+}
+.student .monthly_expenses.no::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 87%;
+    background-color: red;
+    border-radius: 12px;
+    bottom: -7px;
+}
+
+
+.student .info_student a {
+    white-space: nowrap;
+    border: var(--text-color) solid 3px;
+    box-shadow: 0 0 1rem 3px var(--shadow);
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: .5s;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.student .info_student a:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
 .student .student_img img {
+    box-shadow: 0 0 8px var(--primary-color);
+    margin: 5px 0 0 6.5px;
     width: 55px;
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0.1px 0.1px 10px var(--primary-color);
 }
-
-
-
-
-
 
 
 @media screen and (max-width: 575px) {
     .nav-links .nav-link {
-        padding-right: 2px;
-        font-size: 12px;
+        padding-right: 5px;
+        font-size: 16px;
     }
     #switch-mode {
-        padding: 3px 6px;
-        margin-left: 0px;
+        padding: 3px 10px;
+        margin: 0 5px;
     }
     header nav {
         margin-right: 0;
@@ -204,12 +247,49 @@ header nav {
     }
     .logo h1 {
         font-size: 15px;
-        padding-left: 5px;
+        padding-left: 8px;
     }
     .logo img {
         width: 35px;
         height: 35px;
     }
+
+    .container_cards .card {
+        flex-basis: 80%;
+        margin-top: 15px;
+    }
+
+    .section_students {
+        margin: 8% 0;
+    }
+
+    .container_students {
+        margin: 35px 3px;
+        overflow: hidden;
+        padding: 0 8px;
+    }
+    .container_students .student {
+        margin: 5px 0;
+    }
+    .student .info_student h1 {
+        font-size: 6px;
+        font-weight: bold;
+        padding: 0 3px;
+    }
+
+    .student .info_student a {
+        padding: 3px 8px;
+    }
+
+    .student .student_img img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .student .monthly_expenses.no::after {
+        height: 3px;
+    }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 767) {
@@ -225,3 +305,16 @@ header nav {
 }
 
 /* END MEDIA */
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 10px 10px 10px var(--text-color);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 10px 10px 10px var(--primary-color);
+}

@@ -1,18 +1,17 @@
-@extends('layouts.app')
-@section('title', 'Admin')
-@section('content')
+<?php $__env->startSection('title', 'Admin'); ?>
+<?php $__env->startSection('content'); ?>
     <!-- Start Header -->
     <header>
         <nav>
             <div class="logo">
-                <img src="{{ Vite::asset('resources/img/Youssef.jpg') }}" />
+                <img src="<?php echo e(Vite::asset('resources/img/Youssef.jpg')); ?>" />
                 <h1>Manager</h1>
             </div>
             <ul class="nav-links">
-                <li class="nav-link" id="home_link"><a href="{{ route('admin') }}">Home</a></li>
+                <li class="nav-link" id="home_link"><a href="<?php echo e(route('admin')); ?>">Home</a></li>
                 <li class="nav-link" id="logout" type="button"><a href="#">Logout</a></li>
                 <li class="nav-link" id="switch-mode">Dark</li>
-                <form method="POST" action="{{ route('logout') }}" id="logout-form">@csrf</form>
+                <form method="POST" action="<?php echo e(route('logout')); ?>" id="logout-form"><?php echo csrf_field(); ?></form>
             </ul>
         </nav>
     </header>
@@ -61,7 +60,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/Youssef.jpg') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/Youssef.jpg')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Youssef</h1>
@@ -75,7 +74,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/Mohamed.jpg') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/Mohamed.jpg')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Youssef</h1>
@@ -89,7 +88,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/YoussefMo.jpg') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/YoussefMo.jpg')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Youssef</h1>
@@ -103,7 +102,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/student.png') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/student.png')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Mona</h1>
@@ -117,7 +116,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/student.png') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/student.png')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Nada</h1>
@@ -131,7 +130,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/student.png') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/student.png')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Fouad</h1>
@@ -145,7 +144,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/student.png') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/student.png')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Saif</h1>
@@ -159,7 +158,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/student.png') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/student.png')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Youssef</h1>
@@ -173,7 +172,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/student.png') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/student.png')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Marwan</h1>
@@ -187,7 +186,7 @@
 
             <div class="student">
                 <div class="student_img">
-                    <img src="{{ Vite::asset('resources/img/student.png') }}" />
+                    <img src="<?php echo e(Vite::asset('resources/img/student.png')); ?>" />
                 </div>
                 <div class="info_student">
                     <h1 class="name"><span>Name: </span>Hussain</h1>
@@ -204,8 +203,10 @@
 
     </section>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('scripts')
-    @vite('resources/js/Admin/admin.js')
-@endsection
+<?php $__env->startSection('scripts'); ?>
+    <?php echo app('Illuminate\Foundation\Vite')('resources/js/Admin/admin.js'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/youssef/Desktop/K-Link/resources/views/admin.blade.php ENDPATH**/ ?>
