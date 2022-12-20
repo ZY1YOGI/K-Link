@@ -88,5 +88,5 @@
 @endsection
 
 @section('scripts')
-    @vite('resources/js/Auth/auth.js')
+    @vite('resources/js/Auth/main.js')
 @endsection

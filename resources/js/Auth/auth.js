@@ -1,5 +1,3 @@
-import "../../sass/Auth/auth.scss";
-
 $("#sign-up-btn").click(function () {
     $(".container").addClass("sign-up-mode");
 });
