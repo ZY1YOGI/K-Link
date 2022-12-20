@@ -2,7 +2,7 @@
 @section('title', 'Home')
 @section('content')
     <!-- Start Header -->
-        @include('layouts.header')
+        @include('student._header')
     <!-- End Header -->
 
     <!--START HOME -->
@@ -50,5 +50,5 @@
 @endsection
 
 @section('scripts')
-    @vite('resources/js/Home/home.js')
+    @vite('resources/js/Student/main.js')
 @endsection

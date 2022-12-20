@@ -9,6 +9,7 @@
         <meta name="keywords" content="school,schools,K-Link,schools-K-Link,alkamal,kamal,Technology school" />
         
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>" />
+        
         <title><?php echo $__env->yieldContent('title'); ?></title>
         
         <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />

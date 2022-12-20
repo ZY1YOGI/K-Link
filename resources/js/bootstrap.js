@@ -2,7 +2,7 @@
 // window._ = _;
 
 
-//In resources/js/bootstrap.js
+// Jquery
 import $ from 'jquery';
 window.$ = window.jQuery = $;
 

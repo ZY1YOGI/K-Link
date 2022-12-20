@@ -1,5 +1,3 @@
-import "../../sass/Profile/profile.scss";
-
 $(window)
     .on("load resize ", function () {
         var scrollWidth =

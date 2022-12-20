@@ -9,6 +9,7 @@
         <meta name="keywords" content="school,schools,K-Link,schools-K-Link,alkamal,kamal,Technology school" />
         {{-- CSRF Token --}}
         <meta name="csrf-token" content="{{ csrf_token() }}" />
+        {{-- Title --}}
         <title>@yield('title')</title>
         {{-- favicon Icon --}}
         <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />

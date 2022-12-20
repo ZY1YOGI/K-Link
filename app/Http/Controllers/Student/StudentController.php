@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Student;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+use App\Http\Controllers\Controller;
+
+class StudentController extends Controller
 {
     public function __construct()
     {
@@ -13,11 +15,11 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view("home");
+        return view("student.home");
     }
 
     public function profile()
     {
-        return view("profile");
+        return view("student.profile");
     }
 }

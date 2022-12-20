@@ -2,7 +2,7 @@
 @section('title', 'Profile')
 @section('content')
     <!-- Start Header -->
-    @include('layouts.header')
+    @include('student._header')
     <!-- End Header -->
     {{-- <div class="container">
         <table>
@@ -142,5 +142,5 @@
 @endsection
 
 @section('scripts')
-    @vite('resources/js/Profile/profile.js')
+    @vite('resources/js/Student/main.js')
 @endsection

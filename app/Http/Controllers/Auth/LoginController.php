@@ -106,7 +106,7 @@ class LoginController extends Controller
 
         return $request->wantsJson()
             ? new JsonResponse([], 204)
-            : redirect()->route('home');
+            : redirect()->route('student.home');
     }
     /**
      * The user has been authenticated.

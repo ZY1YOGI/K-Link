@@ -10,10 +10,8 @@ export default defineConfig({
             input: [
                 "resources/js/app.js",
                 "resources/js/Welcome/welcome.js",
-                "resources/js/Auth/auth.js",
-                "resources/js/Home/home.js",
-                "resources/js/Profile/profile.js",
-                "resources/js/Admin/admin.js",
+                "resources/js/Admin/main.js",
+                "resources/js/Student/main.js",
             ],
             refresh: true,
         }),

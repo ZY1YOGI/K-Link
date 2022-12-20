@@ -62,7 +62,7 @@ class RegisterController extends Controller
 
         return $request->wantsJson()
             ? new JsonResponse([], 201)
-            : redirect()->route('home');
+            : redirect()->route('student.home');
     }
 
     /**

@@ -12,7 +12,7 @@
                 <li class="nav-link" id="home_link"><a href="{{ route('admin') }}">Home</a></li>
                 <li class="nav-link" id="logout" type="button"><a href="#">Logout</a></li>
                 <li class="nav-link" id="switch-mode">Dark</li>
-                <form method="POST" action="{{ route('logout') }}" id="logout-form">@csrf</form>
+                <form method="POST" action="{{ route('auth.logout') }}" id="logout-form">@csrf</form>
             </ul>
         </nav>
     </header>
@@ -207,5 +207,5 @@
 @endsection
 
 @section('scripts')
-    @vite('resources/js/Admin/admin.js')
+    @vite('resources/js/Admin/main.js')
 @endsection
