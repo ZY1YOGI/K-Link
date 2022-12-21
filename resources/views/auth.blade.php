@@ -7,7 +7,7 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form class="sign-in-form" method="POST" action="{{ route('auth.login') }}">
+                <form class="sign-in-form" method="POST" action="{{ route('login') }}">
                     @csrf
                     <h2 class="title">Sign in</h2>
                     @error('password')<h2 role="alert" class="error-field">{{ $message }}</h2>@enderror
@@ -31,7 +31,7 @@
                     </div>
                 </form>
 
-                <form method="POST" action="{{ route('auth.register') }}" class="sign-up-form">
+                <form method="POST" action="{{ route('register') }}" class="sign-up-form">
                     @csrf
                     <h2 class="title">Sign up</h2>
                     @error('name')<span role="alert" class="error-field">{{ $message }}</span>@enderror

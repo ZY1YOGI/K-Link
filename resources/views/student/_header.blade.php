@@ -9,7 +9,7 @@
             <li class="nav-link" id="profile_link"><a href="{{ route('student.profile') }}">Profile</a></li>
             <li class="nav-link" id="logout" type="button"><a href="#">Logout</a></li>
             <li class="nav-link" id="switch-mode">Dark</li>
-            <form method="POST" action="{{ route('auth.logout') }}" id="logout-form">@csrf</form>
+            <form method="POST" action="{{ route('logout') }}" id="logout-form">@csrf</form>
         </ul>
     </nav>
 </header>

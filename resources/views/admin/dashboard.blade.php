@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Admin')
+@section('title', 'Admin Dashboard')
 @section('content')
     <!-- Start Header -->
     <header>
@@ -9,10 +9,10 @@
                 <h1>Manager</h1>
             </div>
             <ul class="nav-links">
-                <li class="nav-link" id="home_link"><a href="{{ route('admin') }}">Home</a></li>
+                <li class="nav-link" id="home_link"><a href="{{ route('admin.dashboard') }}">Home</a></li>
                 <li class="nav-link" id="logout" type="button"><a href="#">Logout</a></li>
                 <li class="nav-link" id="switch-mode">Dark</li>
-                <form method="POST" action="{{ route('auth.logout') }}" id="logout-form">@csrf</form>
+                <form method="POST" action="{{ route('logout') }}" id="logout-form">@csrf</form>
             </ul>
         </nav>
     </header>

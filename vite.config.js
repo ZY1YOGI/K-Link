@@ -9,7 +9,7 @@ export default defineConfig({
         laravel({
             input: [
                 "resources/js/app.js",
-                "resources/js/Welcome/welcome.js",
+                "resources/js/welcome.js",
                 "resources/js/Auth/main.js",
                 "resources/js/Admin/main.js",
                 "resources/js/Student/main.js",

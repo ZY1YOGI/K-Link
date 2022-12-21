@@ -24,13 +24,3 @@ $("#switch-mode").click(function () {
     this.innerText = "Dark";
     localStorage.setItem("mood", "light");
 });
-
-if (window.location.pathname === "/home" || window.location.pathname === "/admin") {
-    $("#home_link").addClass("active");
-} else if (window.location.pathname === "/profile") {
-    $("#profile_link").addClass("active");
-}
-
-$("#logout").on("click", function () {
-    $("#logout-form").submit();
-});

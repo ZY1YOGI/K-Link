@@ -18,6 +18,6 @@ Route::get('/', [App\Http\Controllers\WelcomeController::class, "index"])->name(
 
 
 Route::get('/auth', [App\Http\Controllers\Auth\AuthController::class, "index"])->name("auth");
-Route::post('/auth/login', [App\Http\Controllers\Auth\LoginController::class, "login"])->name("auth.login");
-Route::post('/auth/register', [App\Http\Controllers\Auth\RegisterController::class, "register"])->name("auth.register");
-Route::post('/auth/logout', [App\Http\Controllers\Auth\LoginController::class, "logout"])->name("auth.logout");
+Route::post('/auth/login', [App\Http\Controllers\Auth\LoginController::class, "login"])->name("login");
+Route::post('/auth/register', [App\Http\Controllers\Auth\RegisterController::class, "register"])->name("register");
+Route::post('/auth/logout', [App\Http\Controllers\Auth\LoginController::class, "logout"])->name("logout");

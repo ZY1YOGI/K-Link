@@ -1,4 +1,4 @@
-import "../../sass/Welcome/welcome.scss";
+import "../../sass/welcome.scss";
 
 let menu = document.querySelector("#menu");
 let header = document.querySelector("header");
