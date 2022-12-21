@@ -12,6 +12,7 @@ export default defineConfig({
                 "resources/js/welcome.js",
                 "resources/js/Auth/main.js",
                 "resources/js/Admin/main.js",
+                "resources/js/Teacher/main.js",
                 "resources/js/Student/main.js",
             ],
             refresh: true,

@@ -206,6 +206,7 @@ header nav {
 
 .student .info_student a {
     white-space: nowrap;
+    color: var(--primary-color);
     border: var(--text-color) solid 3px;
     box-shadow: 0 0 1rem 3px var(--shadow);
     border-radius: 15px;
@@ -217,7 +218,7 @@ header nav {
 
 .student .info_student a:hover {
     background: var(--primary-color);
-    color: #fff;
+    color: #ff0000;
 }
 
 .student .student_img img {
