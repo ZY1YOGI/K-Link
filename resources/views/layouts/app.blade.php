@@ -20,7 +20,6 @@
         {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js" defer></script> --}}
         @vite('resources/js/swiper.js')
-        @vite('resources/sass/swiper.scss')
         {{-- Scripts And Styles --}}
         @vite('resources/js/app.js')
         @yield('scripts')

@@ -14,6 +14,7 @@ export default defineConfig({
                 "resources/js/Admin/main.js",
                 "resources/js/Teacher/main.js",
                 "resources/js/Student/main.js",
+                "resources/js/swiper.js",
             ],
             refresh: true,
         }),

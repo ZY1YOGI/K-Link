@@ -19,7 +19,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
         
         <?php echo app('Illuminate\Foundation\Vite')('resources/js/swiper.js'); ?>
-        <?php echo app('Illuminate\Foundation\Vite')('resources/sass/swiper.scss'); ?>
         
         <?php echo app('Illuminate\Foundation\Vite')('resources/js/app.js'); ?>
         <?php echo $__env->yieldContent('scripts'); ?>

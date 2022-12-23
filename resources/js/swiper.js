@@ -1,3 +1,5 @@
+import "../sass/swiper.scss";
+
 /**
  * Swiper 8.4.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
