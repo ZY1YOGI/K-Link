@@ -109,3 +109,13 @@ body.dark {
         color: #000;
     }
 }
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 10px 10px 10px var(--text-color);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 10px 10px 10px var(--primary-color);
+}

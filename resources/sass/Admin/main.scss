@@ -87,13 +87,3 @@
 
 @media screen and (min-width: 768px) and (max-width: 991) {
 }
-
-::-webkit-scrollbar {
-    width: 4px;
-}
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 10px 10px 10px var(--text-color);
-}
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 10px 10px 10px var(--primary-color);
-}
