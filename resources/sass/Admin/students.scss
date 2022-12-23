@@ -1,0 +1,106 @@
+.container_cards .card {
+    flex-basis: 12%;
+}
+.section_students {
+    margin: 5%;
+    user-select: none;
+}
+
+.section_students .input_form {
+    display: flex;
+    justify-content: center;
+}
+
+.section_students .input_form input {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    color: var(--text-color);
+    background: #fff;
+    padding: 8px 28px;
+    outline: none;
+    box-shadow: 0 0 5rem var(--shadow);
+}
+
+.section_students .input_form input::placeholder {
+    color: #3c3c3c;
+}
+
+.container_students {
+    flex-direction: column;
+    margin: 35px 35px;
+    padding: 0 12px;
+    height: 500px;
+    box-shadow: 0 0 3rem var(--shadow);
+    border-radius: 25px;
+    overflow-x: hidden;
+}
+
+.container_students .student {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 5px solid var(--primary-color);
+    border-radius: 60px 0px 0px 60px;
+    border-left: transparent;
+    border-right: transparent;
+    margin: 35px 0;
+}
+
+.student .info_student {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.student .info_student h1 span {
+    color: var(--primary-color);
+}
+
+.student .info_student h1 {
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0 15px;
+    color: var(--text-color);
+}
+
+.student .monthly_expenses {
+    position: relative;
+}
+.student .monthly_expenses.no::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 87%;
+    background-color: red;
+    border-radius: 12px;
+    bottom: -7px;
+}
+
+.student .info_student a {
+    white-space: nowrap;
+    color: var(--primary-color);
+    border: var(--text-color) solid 3px;
+    box-shadow: 0 0 1rem 3px var(--shadow);
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: 0.5s;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.student .info_student a:hover {
+    background: var(--primary-color);
+    color: #ff0000;
+}
+
+.student .student_img img {
+    box-shadow: 0 0 8px var(--primary-color);
+    margin: 5px 0 0 6.5px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}

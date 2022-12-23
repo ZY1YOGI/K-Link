@@ -1,0 +1,115 @@
+/* section team Teachers */
+
+.sec-team {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-top: 50px;
+}
+
+.sec-team .sect-head {
+    text-align: center;
+}
+
+.sec-team .slide-container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card {
+    border-radius: 25px;
+    background-color: #fff;
+}
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content {
+    row-gap: 10px;
+    position: relative;
+    padding: 25px 0;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00aeef;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #00aeef;
+}
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00aeef;
+}
+.sec-team .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    z-index: 999;
+}
+.sec-team .description {
+    font-size: 16px;
+    color: #585858;
+    text-align: center;
+}
+.sec-team .links {
+    width: 50%;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 27px;
+}
+.sec-team .links a {
+    color: #00aeef;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+    .swiper-pagination-bullet {
+    background-color: #00afef85;
+    opacity: 1;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+    .swiper-pagination-bullet-active {
+    background-color: #00aeef;
+    opacity: 1;
+}

@@ -1,2 +1,99 @@
 @import "../variables";
-@import "./dashboard.scss";
+@import "./header";
+@import "./cards";
+@import "./dashboard";
+@import "./teachers.scss";
+@import "./students.scss";
+
+@media screen and (max-width: 575px) {
+    header nav {
+        margin: 0;
+    }
+
+    .nav-links {
+        padding: 0;
+    }
+
+    .nav-links .nav-link {
+        padding: 0 2px;
+        font-size: 12px;
+    }
+
+    #switch-mode {
+        padding: 2px 8px;
+    }
+
+    .logo {
+        padding: 0 0 0 2px;
+    }
+    .logo h1 {
+        font-size: 16px;
+        padding: 0 0 0 3px;
+    }
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    .container_cards .card {
+        flex-basis: 80%;
+        margin-top: 15px;
+    }
+
+    .section_students {
+        margin: 8% 0;
+    }
+
+    .container_students {
+        margin: 35px 3px;
+        padding: 0 0px;
+    }
+    .container_students .student {
+        flex-direction: column;
+        margin: 10px auto;
+        border-radius: 0;
+        padding: 5px 0;
+    }
+
+    .student .info_student {
+        justify-content: center;
+        padding: 0 auto;
+    }
+
+    .student .info_student h1 {
+        font-size: 6px;
+        font-weight: bold;
+        padding: 0 3px;
+    }
+
+    .student .info_student a {
+        margin: 0;
+        padding: 3px 3px;
+        font-size: 6px;
+        border: var(--text-color) solid 1px;
+    }
+
+    .student .student_img img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .student .monthly_expenses.no::after {
+        height: 2px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991) {
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 10px 10px 10px var(--text-color);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 10px 10px 10px var(--primary-color);
+}
