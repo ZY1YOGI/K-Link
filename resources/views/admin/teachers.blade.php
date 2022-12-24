@@ -123,7 +123,7 @@
                             </div>
                         </div>
                         <div class="card-content">
-                            <h2 class="name">Miss.Youssef</h2>
+                            <h2 class="name">Miss.El Math</h2>
                             <p class="description">معلمة الميكانيكا</p>
                             <div class="links">
                                 <a href="https://www.facebook.com/profile.php?id=100035824070507" target="_blank"><i
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                         <div class="card-content">
-                            <h2 class="name">Miss.Youssef</h2>
+                            <h2 class="name">Miss.El Math</h2>
                             <p class="description">معلمة الرياضيات</p>
                             <div class="links">
                                 <a href="https://www.facebook.com/profile.php?id=100035824070507" target="_blank"><i
