@@ -2,10 +2,8 @@
 
 header {
     min-width: 100vw;
-    width: 100vw;
-    box-shadow: 1rem 1rem 3rem var(--shadow);
-    -webkit-user-select: none;
-    -moz-user-select: none;
+    background: var(--body-color);
+    box-shadow: 0 0 3rem var(--shadow);
     user-select: none;
 }
 header nav {
@@ -32,8 +30,7 @@ header nav {
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: .1px .1px 10px var(--primary-color);
-
+    box-shadow: 0 0 10px var(--primary-color);
 }
 
 .nav-links {
@@ -74,37 +71,44 @@ header nav {
 }
 
 #switch-mode {
-    color: #4400ff;
+    color: #723eff;
     border: 1px solid var(--primary-color);
     border-radius: 6px;
-    padding: 5px 19px;
-    box-shadow: 1rem 1rem 3rem var(--shadow);
+    padding: 3px 20px;
+    box-shadow: 1rem 1rem 4rem var(--shadow);
 }
 
 #switch-mode:hover {
     color: #00f;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 /* END HEADER */
 
 @media screen and (max-width: 575px) {
-    .nav-links .nav-link {
-        padding-right: 2px;
-        font-size: 12px;
-    }
-    #switch-mode {
-        padding: 3px 6px;
-        margin-left: 0px;
-    }
     header nav {
-        margin-right: 0;
-        margin-left: 1%;
         margin: 0;
     }
+
+    .nav-links {
+        padding: 0;
+    }
+
+    .nav-links .nav-link {
+        padding: 0 3px;
+        font-size: 14px;
+    }
+
+    #switch-mode {
+        padding: 2px 8px;
+    }
+
+    .logo {
+        padding: 0 0 0 2px;
+    }
     .logo h1 {
-        font-size: 15px;
-        padding-left: 5px;
+        font-size: 16px;
+        padding: 0 0 0 3px;
     }
     .logo img {
         width: 35px;

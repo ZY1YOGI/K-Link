@@ -73,7 +73,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 10</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 9</h1>
                     <h1 class="monthly_expenses"><span>Expenses: </span>12 | Yes</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -87,7 +87,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 8</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 7</h1>
                     <h1 class="monthly_expenses"><span>Expenses: </span>12 | Yes</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -101,7 +101,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 9</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 14</h1>
                     <h1 class="monthly_expenses"><span>Expenses: </span>12 | Yes</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 8</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 13</h1>
                     <h1 class="monthly_expenses"><span>Expenses: </span>12 | Yes</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -129,7 +129,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 6</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 14</h1>
                     <h1 class="monthly_expenses no"><span>Expenses: </span>12 | No</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -143,7 +143,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 7</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 23</h1>
                     <h1 class="monthly_expenses true"><span>Expenses: </span>12 | Yes</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -157,7 +157,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 9</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 17</h1>
                     <h1 class="monthly_expenses no"><span>Expenses: </span>12 | No</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -171,7 +171,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 8</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 9</h1>
                     <h1 class="monthly_expenses"><span>Expenses: </span>12 | Yes</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -185,7 +185,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 3</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 18</h1>
                     <h1 class="monthly_expenses"><span>Expenses: </span>12 | Yes</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
@@ -199,7 +199,7 @@
                     <h1 class="weekly_average"><span>Weekly Average: </span>10 | 7</h1>
                     <h1 class="absence_days"><span>Absence Days: </span>29 | 18</h1>
                     <h1 class="monthly_expenses no"><span>Expenses: </span>12 | No</h1>
-                    <a href="#">Show Profile</a>
+                    <a href="#">Profile</a>
                 </div>
             </div>
 
