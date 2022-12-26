@@ -103,10 +103,13 @@ class LoginController extends Controller
         if ($response = $this->authenticated($request, $this->guard()->user())) {
             return $response;
         }
-
-        return $request->wantsJson()
-            ? new JsonResponse([], 204)
-            : redirect()->route('student.home');
+        if (auth()->user()->type == "student") {
+            return redirect()->route('student.home');
+        } else if (auth()->user()->type == "teacher") {
+            return redirect()->route('teacher.dashboard');
+        } else if (auth()->user()->type == "admin") {
+            return redirect()->route('admin.dashboard');
+        }
     }
     /**
      * The user has been authenticated.
