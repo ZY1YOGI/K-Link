@@ -125,8 +125,7 @@
                         <div class="image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img class="card-img" src="{{ Vite::asset('resources/img/Youssef.jpg') }}"
-                                    alt="">
+                                <img class="card-img" src="{{ Vite::asset('resources/img/Youssef.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="card-content">
@@ -143,47 +142,75 @@
                         </div>
                     </div>
 
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img class="card-img" src="{{ Vite::asset('resources/img/Mohamed.jpg') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name">Mohamed</h2>
-                            <p class="description">Front End developer</p>
-                            <div class="links">
-                                <a href="https://www.facebook.com/profile.php?id=100019727234673" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/medosayad56" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="card swiper-slide">
                         <div class="image-content">
                             <span class="overlay"></span>
                             <div class="card-image">
-                                <img class="card-img" src="{{ Vite::asset('resources/img/YoussefMo.jpg') }}" alt="">
+                                <img class="card-img" src=""
+                                    alt="">
                             </div>
                         </div>
                         <div class="card-content">
-                            <h2 class="name">Youssef</h2>
-                            <p class="description">DevOps developer</p>
+                            <h2 class="name">Mona Alaa</h2>
+                            <p class="description">Ui-UX Web developer</p>
                             <div class="links">
-                                <a href="https://www.facebook.com/profile.php?id=100035824070507" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/yoseef_mo_gaber" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/ZY1YOGi" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/YoussefAmjad6" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/zy1yogi" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
-                    </div>
-
                 </div>
-                
+
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img class="card-img" src="{{ Vite::asset('resources/img/Mohamed.jpg') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Mohamed</h2>
+                        <p class="description">Front End developer</p>
+                        <div class="links">
+                            <a href="https://www.facebook.com/profile.php?id=100019727234673" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/medosayad56" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img class="card-img" src="{{ Vite::asset('resources/img/YoussefMo.jpg') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Youssef</h2>
+                        <p class="description">DevOps developer</p>
+                        <div class="links">
+                            <a href="https://www.facebook.com/profile.php?id=100035824070507" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/yoseef_mo_gaber" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
         </div>
         </div>
     </section>
